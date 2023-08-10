@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Include other styles and libraries as needed -->
+</head>
+<body>
+  <div id="container">
+    <h1>Electric Fuel Stations Dashboard</h1>
+    <label for="stateDropdown">Select State:</label>
+    <select id="stateDropdown"></select>
+
+    <div id="summaryTable">
+      <h2>Summary Table</h2>
+      <table>
+        <tr>
+          <th>Total Stations</th>
+          <td id="totalStations"></td>
+        </tr>
+        <tr>
+          <th>Level 1 Stations</th>
+          <td id="level1Stations"></td>
+        </tr>
+        <tr>
+          <th>Level 2 Stations</th>
+          <td id="level2Stations"></td>
+        </tr>
+        <tr>
+          <th>DC Fast Stations</th>
+          <td id="dcFastStations"></td>
+        </tr>
+        <tr>
+          <th>Public Stations</th>
+          <td id="publicStations"></td>
+        </tr>
+        <tr>
+          <th>Private Stations</th>
+          <td id="privateStations"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="stackedBarChart" class="chart"></div>
+    <div id="pieChart" class="chart"></div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
