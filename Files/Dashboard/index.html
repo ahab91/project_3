@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternative Fuel Stations</title>
+  <!-- Include Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <!-- Include other styles, scripts, etc. -->
 </head>
 <body>
-  <select id="stateDropdown"></select>
-  <div id="map1" class="map"></div>
-  <div id="map2" class="map"></div>
-  <div id="map3" class="map"></div>
-  <div id="chartsContainer">
-    <div id="chart1" class="chart"></div>
-    <div id="chart2" class="chart"></div>
-    <div id="chart3" class="chart"></div>
+  <!-- State Dropdown -->
+  <select id="stateDropdown">
+    <!-- Options will be populated dynamically -->
+  </select>
+
+  <!-- Leaflet Map -->
+  <div id="map" style="height: 400px;"></div>
+
+  <!-- Stacked Bar Chart -->
+  <div style="width: 100%; max-width: 800px; margin: 0 auto;">
+    <canvas id="barChart"></canvas>
   </div>
-  <div id="dataTableContainer">
-    <table id="dataTable"></table>
-  </div>
+
+  <!-- Include required libraries -->
+  <script src="https://unpkg.com/d3@7.0.0/dist/d3.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Include your modified JavaScript code here -->
   <script src="main.js"></script>
 </body>
 </html>
+
 
