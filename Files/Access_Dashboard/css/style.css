@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+body, div, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container for the dropdown and map */
+#container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown styles */
+#stateDropdown {
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Map container */
+#map {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+/* Map legend styles */
+.legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Additional styles for Chart.js legend */
+.chart-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.chart-legend span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.chart-legend .fast {
+  background-color: #2ca02c;
+}
+
+.chart-legend .medium {
+  background-color: #ffcc00;
+}
+
+.chart-legend .slow {
+  background-color: #ff4136;
+}
+
+.chart-legend .na {
+  background-color: #d3d3d3;
+}
+
+/* Bar chart container */
+.chart-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
