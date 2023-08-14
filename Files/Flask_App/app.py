@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the CSV data into a pandas DataFrame
-df = pd.read_csv("alt_fuel.fuel_stations.csv")
+df = pd.read_csv("../Resources/alt_fuel.fuel_stations.csv")
 
 @app.route("/")
 def root():

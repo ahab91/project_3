@@ -30,7 +30,7 @@ sortedStates.forEach(state => {
       const marker = L.marker([station.latitude, station.longitude], { icon: getMarkerIcon(station) });
 
       marker.bindPopup(
-        `<strong>${station.station_name}</strong><br>Status: ${station.status_code}<br>Access: ${station.access_code}`
+        `<strong>${station.station_name}</strong><br>Status: ${station.status_code}<br>Access: ${station.access_code}<br>Facility: ${station.facility_type}`
       );
 
       mapLayer.addLayer(marker);

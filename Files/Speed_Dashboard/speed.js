@@ -99,7 +99,7 @@ sortedStates.forEach(state => {
         data: {
           labels,
           datasets: [{
-            label: "Number of Electric Stations",
+            label: "Number of Electric Stations by Fastest Charging Speed Available",
             data,
             backgroundColor: ["#2ca02c", "#ffcc00", "#ff4136", "#d3d3d3"],
           }],
@@ -112,7 +112,7 @@ sortedStates.forEach(state => {
           plugins: {
             title: {
               display: true,
-              text: "Number of Electric Stations",
+              text: "Number of Electric Stations by Fastest Charging Speed Available",
             },
           },
           legend: {
